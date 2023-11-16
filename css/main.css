@@ -27,7 +27,7 @@ li {
 
 li a {
   display: block;
-  color: white;  
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -37,7 +37,9 @@ li a {
 .nav {
   padding-top: 20px;
   text-align: center;
-  padding-left: 16%;
+  max-width: 100%;
+  position: absolute;
+  z-index: 2;
 }
 
 #banner {
@@ -47,11 +49,6 @@ li a {
 
 #banner>img {
   max-width: 100%;
-  position: relative;
   z-index: -1;
-  top: 10px;
-}
-.logo>svg{
   position: relative;
-  z-index: 1;
 }
