@@ -1,7 +1,6 @@
 @font-face {
   font-family: SVN-Gotham;
   src: url(../fonts/SVN-Gotham\ Light.ttf);
-
 }
 
 #header1 {
@@ -42,6 +41,23 @@ li a {
   z-index: 2;
 }
 
+.bell>a>img {
+  border: 1px none;
+  padding: 6px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+#lang>a{
+  margin-left: 0;
+  padding-left: 0;
+}
+#lang>a>img{
+  border: 1px none;
+  padding: 4px;
+  padding-right: 22px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
 #banner {
   text-align: center;
   position: relative;
@@ -51,4 +67,24 @@ li a {
   max-width: 100%;
   z-index: -1;
   position: relative;
+}
+
+#gradient {
+  max-width: 100%;
+  margin-bottom: 0;
+  background-color: black;
+  position: absolute;
+  z-index: 2;
+}
+
+@media (min-width: 1400px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1385px;
+  }
 }
