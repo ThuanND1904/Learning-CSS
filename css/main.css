@@ -47,17 +47,20 @@ li a {
   border-radius: 50%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
 }
-#lang>a{
+
+#lang>a {
   margin-left: 0;
   padding-left: 0;
 }
-#lang>a>img{
+
+#lang>a>img {
   border: 1px none;
   padding: 4px;
   padding-right: 22px;
   border-radius: 20px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
 }
+
 #banner {
   text-align: center;
   position: relative;
@@ -77,6 +80,120 @@ li a {
   z-index: 2;
 }
 
+#content {
+  padding-top: 80px;
+  text-align: left;
+}
+
+/*
+#content>h3,
+#content>p {
+  text-align: left;
+}
+*/
+#content>h3 {
+  color: var(--color-01, #216874);
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+#content>p {
+  color: #333;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+#Rectangle7 {
+  width: 269px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 0px 20px;
+  background: var(--gradient-01, linear-gradient(270deg, #E4894A 0%, #F0CC16 100%, #F0CC16 100%));
+  color: #FFF;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 45px;
+  /* 250% */
+  text-align: center;
+}
+
+#Rectangle12 {
+  padding-top: 30px;
+  padding-left: 45px;
+}
+
+#Rectangle12>#coupon {
+  border: 1px solid #216874;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+#Rectangle12>#ticket {
+  color: var(--color-01, #216874);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  padding-top: 5px;
+  padding-left: 10px;
+  /* 225% */
+}
+
+#Rectangle12>.row {
+  padding-top: 6px;
+}
+
+#Rectangle12>.row>#col1 {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  /* 250% */
+}
+
+#Rectangle12>.row>#col2 {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  /* 281.25% */
+}
+
+#Rectangle12>.row>#col2>#checked {
+  color: #1F8F10;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+#Rectangle12>.row>#col3 {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  /* 281.25% */
+}
+
+#Rectangle12>.row>#col4 {
+  color: #D70000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  /* 281.25% */
+}
+
 @media (min-width: 1400px) {
 
   .container,
@@ -87,67 +204,4 @@ li a {
   .container-xxl {
     max-width: 1385px;
   }
-}
-.custom-select{
-  width: 35px;
-}
-/*the container must be positioned relative:*/
-.custom-select {
-  position: relative;
-  font-family: Arial;
-}
-
-.custom-select select {
-  display: none; /*hide original SELECT element:*/
-}
-
-.select-selected {
-  background-color: DodgerBlue;
-}
-
-/*style the arrow inside the select element:*/
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-/*point the arrow upwards when the select box is open (active):*/
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-/*style the items (options), including the selected item:*/
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  user-select: none;
-}
-
-/*style items (options):*/
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/*hide the items when the select box is closed:*/
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
 }
